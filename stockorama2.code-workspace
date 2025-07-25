@@ -1,0 +1,33 @@
+{
+    "folders": [
+        {
+            "name": "🏠 Root",
+            "path": "."
+        },
+        {
+            "name": "🌐 Frontend",
+            "path": "./apps/frontend"
+        },
+        {
+            "name": "⚙️ Backend",
+            "path": "./apps/backend"
+        }
+    ],
+    "settings": {
+        "typescript.preferences.includePackageJsonAutoImports": "auto",
+        "typescript.workspaceSymbols.scope": "allOpenProjects",
+        "eslint.workingDirectories": [
+            "./apps/frontend",
+            "./apps/backend"
+        ]
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-vscode.vscode-typescript-next",
+            "bradlc.vscode-tailwindcss",
+            "esbenp.prettier-vscode",
+            "ms-vscode.vscode-eslint",
+            "ms-vscode.vscode-json"
+        ]
+    }
+}

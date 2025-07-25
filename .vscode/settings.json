@@ -1,0 +1,14 @@
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "prettier.configPath": ".prettierrc",
+    "prettier.requireConfig": true,
+    "typescript.preferences.includePackageJsonAutoImports": "auto",
+    "typescript.workspaceSymbols.scope": "allOpenProjects",
+    "eslint.workingDirectories": [
+        "./apps/frontend",
+        "./apps/backend"
+    ]
+}

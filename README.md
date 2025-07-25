@@ -1,23 +1,136 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# Stock-O-Rama v2
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+A modern stock management application built with a monorepo architecture.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
+## Architecture
+
+This project is structured as a monorepo containing:
+
+- **Frontend** (`apps/frontend`): React + TypeScript + Vite
+- **Backend** (`apps/backend`): NestJS + TypeScript + Node.js
+
+## Prerequisites
+
+- Node.js (v16 or higher)
+- npm (v7 or higher)
+
+## Getting Started
+
+### 1. Install Dependencies
+
+```bash
+npm install
+```
+
+This will install dependencies for all packages in the monorepo.
+
+### 2. Development
+
+To run both frontend and backend in development mode:
+
+```bash
+npm run dev
+```
+
+Or run them individually:
+
+```bash
+# Backend only (runs on http://localhost:3000)
+npm run dev:backend
+
+# Frontend only (runs on http://localhost:5173)
+npm run dev:frontend
+```
+
+### 3. Building
+
+Build all packages:
+
+```bash
+npm run build
+```
+
+Or build individually:
+
+```bash
+npm run build:backend
+npm run build:frontend
+```
+
+### 4. Testing
+
+Run tests for all packages:
+
+```bash
+npm run test
+```
+
+Or test individually:
+
+```bash
+npm run test:backend
+npm run test:frontend
+```
+
+## Project Structure
+
+```
+stockorama2/
+├── apps/
+│   ├── backend/          # NestJS API
+│   │   ├── src/
+│   │   ├── test/
+│   │   └── package.json
+│   └── frontend/         # React + Vite app
+│       ├── src/
+│       ├── public/
+│       └── package.json
+├── package.json          # Root package.json with workspace config
+└── README.md
+```
+
+## Available Scripts
+
+### Root Level
+- `npm run dev` - Start both frontend and backend in development mode
+- `npm run build` - Build all packages
+- `npm run test` - Run tests for all packages
+- `npm run lint` - Lint all packages
+
+### Backend (`apps/backend`)
+- `npm run start:dev` - Start backend in development mode
+- `npm run start:prod` - Start backend in production mode
+- `npm run build` - Build backend
+- `npm run test` - Run backend tests
+- `npm run lint` - Lint backend code
+
+### Frontend (`apps/frontend`)
+- `npm run dev` - Start frontend development server
+- `npm run build` - Build frontend for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Lint frontend code
+
+## Technology Stack
+
+### Backend
+- NestJS - Progressive Node.js framework
+- TypeScript - Typed JavaScript
+- Express - Web framework
+- Jest - Testing framework
+
+### Frontend
+- React 19 - User interface library
+- TypeScript - Typed JavaScript
+- Vite - Build tool and development server
+- ESLint - Code linting
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 

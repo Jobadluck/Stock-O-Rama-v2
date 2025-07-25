@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "🚀 Starting Stock-O-Rama v2 Development Environment"
+echo "=============================================="
+echo ""
+echo "📦 Backend will run on: http://localhost:3000"
+echo "🌐 Frontend will run on: http://localhost:5173"
+echo ""
+echo "To start development servers, run:"
+echo "npm run dev"
+echo ""
+echo "Or start them individually:"
+echo "npm run dev:backend"
+echo "npm run dev:frontend"
+echo ""
+echo "=============================================="
